@@ -10,9 +10,8 @@ interface IFetchProducts {
 
 /**
  * Fetches products from the API based on provided options.
- * @param {Object} options - The options for fetching products.
- * @param {number} [options.limit] - The maximum number of products to fetch.
- * @param {Category} [options.category] - The category of products to fetch.
+ * @param {number} [limit] - The maximum number of products to fetch.
+ * @param {Category} [category] - The category of products to fetch.
  * @returns {Promise<IProduct[]>} A promise that resolves to an array of products.
  */
 export const fetchProducts = async ({
