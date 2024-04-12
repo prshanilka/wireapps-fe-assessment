@@ -1,4 +1,4 @@
-# Wireapps fe assessment
+# Wireapps FE assessment
 
 use Node 20.10
 
