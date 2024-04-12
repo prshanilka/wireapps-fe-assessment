@@ -1,5 +1,5 @@
 import { IProduct } from "@/interface/product.interface";
-import { Category } from "@/utils/enums";
+import { Category } from "@/helpers/enums";
 
 const baseUrl = import.meta.env.VITE_API_ENDPOINT || "https://dummyjson.com";
 export const fetchProducts = async ({

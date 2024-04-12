@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import useSWR from "swr";
 import { fetchProducts } from "@/services/api";
 import ProductCard from "@/elements/ProductCard";
-import { Category } from "@/utils/enums";
+import { Category } from "@/helpers/enums";
 
 interface ICardGrid {
   limit?: number;

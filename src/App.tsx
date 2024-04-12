@@ -3,7 +3,7 @@ import Layout from "./components/Layout";
 import { Suspense, lazy } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import ErrorFallback from "./components/ErrorFallback";
-import Home from "@/pages/Home";
+import HomePage from "@/pages/HomePage";
 import SkeletonProductGrid from "./components/skeletons/SkeletonProductGrid";
 import "./styles/main.scss";
 
@@ -19,7 +19,7 @@ function App() {
     >
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+          <Route index element={<HomePage />} />
           <Route
             path="category/:category"
             element={

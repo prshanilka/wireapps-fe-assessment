@@ -1,6 +1,6 @@
 import React from "react";
 import { IProduct } from "@/interface/product.interface";
-import { CategoryColor } from "@/utils/constants";
+import { CategoryColor } from "@/helpers/constants";
 interface IProductCard {
   product: IProduct;
 }

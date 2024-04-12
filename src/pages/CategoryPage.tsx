@@ -1,6 +1,6 @@
 import CardGrid from "@/components/CardGrid";
-import { CategoryName } from "@/utils/constants";
-import { Category } from "@/utils/enums";
+import { CategoryName } from "@/helpers/constants";
+import { Category } from "@/helpers/enums";
 import { useParams } from "react-router-dom";
 
 const CategoryPage = () => {

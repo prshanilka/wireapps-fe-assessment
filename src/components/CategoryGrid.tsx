@@ -1,6 +1,6 @@
 import CategoryCard from "@/elements/CategoryCard";
 import { fetchCategories } from "@/services/api";
-import { CategoryColor, CategoryName } from "@/utils/constants";
+import { CategoryColor, CategoryName } from "@/helpers/constants";
 import React from "react";
 import { Link } from "react-router-dom";
 import useSWR from "swr";

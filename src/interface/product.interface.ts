@@ -1,4 +1,4 @@
-import { Category } from "@/utils/enums";
+import { Category } from "@/helpers/enums";
 
 export interface IProduct {
   id: number;

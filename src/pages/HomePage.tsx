@@ -4,7 +4,7 @@ import SkeletonCategoryGrid from "@/components/skeletons/SkeletonCategoryGrid";
 import SkeletonProductGrid from "@/components/skeletons/SkeletonProductGrid";
 import { Suspense } from "react";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <main className="home">
       <Suspense fallback={<SkeletonProductGrid />}>
@@ -16,4 +16,4 @@ const Home = () => {
     </main>
   );
 };
-export default Home;
+export default HomePage;
