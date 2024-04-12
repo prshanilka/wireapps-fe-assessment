@@ -1,14 +1,24 @@
-import { IProduct } from "@/interface/product.interface";
+import { IProduct } from "@/interfaces/product.interface";
 import { Category } from "@/helpers/enums";
 
 const baseUrl = import.meta.env.VITE_API_ENDPOINT || "https://dummyjson.com";
+
+interface IFetchProducts {
+  limit?: number;
+  category?: Category;
+}
+
+/**
+ * Fetches products from the API based on provided options.
+ * @param {Object} options - The options for fetching products.
+ * @param {number} [options.limit] - The maximum number of products to fetch.
+ * @param {Category} [options.category] - The category of products to fetch.
+ * @returns {Promise<IProduct[]>} A promise that resolves to an array of products.
+ */
 export const fetchProducts = async ({
   limit,
   category,
-}: {
-  limit?: number;
-  category?: Category;
-}): Promise<IProduct[]> => {
+}: IFetchProducts): Promise<IProduct[]> => {
   const response = await fetch(
     `${baseUrl}/products${
       category ? `/category/${encodeURIComponent(category)}` : ""
@@ -17,6 +27,10 @@ export const fetchProducts = async ({
   return response.json();
 };
 
+/**
+ * Fetches all available categories from the API.
+ * @returns {Promise<Category[]>} A promise that resolves to an array of categories.
+ */
 export const fetchCategories = async (): Promise<Category[]> => {
   const response = await fetch(`${baseUrl}/products/categories`);
   return response.json();

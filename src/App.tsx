@@ -2,9 +2,9 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import Layout from "./components/Layout";
 import { Suspense, lazy } from "react";
 import { ErrorBoundary } from "react-error-boundary";
-import ErrorFallback from "./components/ErrorFallback";
+import SkeletonProductGrid from "@/components/skeletons/SkeletonProductGrid";
+import ErrorFallback from "@/components/ErrorFallback";
 import HomePage from "@/pages/HomePage";
-import SkeletonProductGrid from "./components/skeletons/SkeletonProductGrid";
 import "./styles/main.scss";
 
 const Category = lazy(() => import("./pages/CategoryPage"));
