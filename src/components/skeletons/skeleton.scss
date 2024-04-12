@@ -1,0 +1,26 @@
+.skeleton {
+  background-color: rgba(204, 204, 204, 0.288);
+  margin: 0.75rem 0;
+  border-radius: 0.25rem;
+  &.card {
+    height: 438px;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  &.card-category {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* animation */
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
