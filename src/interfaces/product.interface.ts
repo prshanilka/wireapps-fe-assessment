@@ -1,5 +1,8 @@
 import { Category } from "@/helpers/enums";
-
+interface IProductRating {
+  rate: number;
+  count: number;
+}
 export interface IProduct {
   id: number;
   title: string;
@@ -7,8 +10,5 @@ export interface IProduct {
   category: Category;
   description: string;
   image: string;
-  rating: {
-    rate: number;
-    count: number;
-  };
+  rating: IProductRating;
 }
