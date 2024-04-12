@@ -1,7 +1,7 @@
 import { IProduct } from "@/interfaces/product.interface";
 import { Category } from "@/helpers/enums";
 
-const baseUrl = import.meta.env.VITE_API_ENDPOINT || "https://dummyjson.com";
+const baseUrl = import.meta.env.VITE_API_ENDPOINT || "https://fakestoreapi.com";
 
 interface IFetchProducts {
   limit?: number;
