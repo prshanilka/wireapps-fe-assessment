@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+# Wireapps fe assessment
 
 use Node 20.10
 
